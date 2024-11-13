@@ -1,0 +1,53 @@
+# Node.js dependencies
+/rick-and-morty-frontend/node_modules/
+
+# React build
+build/
+
+# npm logs
+npm-debug.log
+yarn-error.log
+
+# Go binary files
+/rick_and_morty_api/*.exe
+/rick_and_morty_api/*.exe~
+/rick_and_morty_api/*.dll
+/rick_and_morty_api/*.so
+/rick_and_morty_api/*.dylib
+
+# Go workspace
+/vendor/
+
+# Go module cache
+/.go/pkg/
+
+# Go test result files
+*.test
+*.out
+
+# MongoDB database
+data/
+
+# Terraform files
+/terraform/.terraform/
+/terraform/*.tfstate
+/terraform/*.tfstate.*
+/terraform/.terraform.lock.hcl
+
+# IDE/editor specific files
+.vscode/
+.idea/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
