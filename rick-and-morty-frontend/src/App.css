@@ -43,8 +43,8 @@ h1 {
 
 /* Focused state for the input field */
 .search-bar-input:focus {
-  border-color: #00bcd4;
-  box-shadow: 0 0 15px rgba(0, 188, 212, 0.3);
+  border-color: #007bff; /* Highlighted border with primary color */
+  box-shadow: 0 0 15px rgba(0, 123, 255, 0.3);
 }
 
 /* Search icon inside input */
@@ -60,7 +60,7 @@ h1 {
 
 /* Search button */
 .search-button {
-  background-color: #00bcd4;
+  background-color: #007bff; /* Primary blue color */
   color: white;
   font-size: 1.2rem;
   padding: 12px 25px;
@@ -74,8 +74,8 @@ h1 {
 
 /* Button hover effect */
 .search-button:hover {
-  background-color: #0097a7;
-  box-shadow: 0 6px 12px rgba(0, 188, 212, 0.3);
+  background-color: #0056b3; /* Darker shade of blue for hover */
+  box-shadow: 0 6px 12px rgba(0, 123, 255, 0.3);
 }
 
 /* Character details card container */
