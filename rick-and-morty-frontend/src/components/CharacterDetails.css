@@ -1,0 +1,121 @@
+/* Wrapper for the entire character details view */
+.character-details-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 40px;
+    background-color: #f9f9f9;
+    height: 100vh;
+  }
+  
+  /* Card that contains character details */
+  .character-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: white;
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+  }
+  
+  /* Title and header styling */
+  .character-card h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  /* Styling for the name of the character */
+  .character-card p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #555;
+  }
+  
+  .character-card h3 {
+    font-size: 1.5rem;
+    margin-top: 30px;
+    color: #333;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  /* Styling for each episode number */
+  .character-card ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .character-card li {
+    background-color: #f2f2f2;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 6px;
+    color: #444;
+  }
+  
+  .character-card li:hover {
+    background-color: #e0e0e0;
+  }
+  
+  /* Icons for character details */
+  .character-card strong {
+    color: #333;
+  }
+  
+  /* Additional Styling for each section */
+  .character-card .section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+  
+  /* Enhancing readability of each section */
+  .character-card .section p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  /* Adding a rounded border for the card */
+  .character-card .image-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .character-image {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #ddd;
+  }
+  
+  /* Responsive styling */
+  @media screen and (max-width: 768px) {
+    .character-card {
+      padding: 15px;
+    }
+  
+    .character-card h2 {
+      font-size: 1.5rem;
+    }
+  
+    .character-card p {
+      font-size: 1rem;
+    }
+  
+    .character-card h3 {
+      font-size: 1.25rem;
+    }
+  }
+  

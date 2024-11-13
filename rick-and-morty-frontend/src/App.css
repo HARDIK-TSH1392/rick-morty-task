@@ -1,0 +1,259 @@
+/* src/App.css */
+.App {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f4f7fc; /* Light background for clean look */
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #00bcd4;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 4px rgba(0, 188, 212, 0.5); /* Soft shadow */
+}
+
+/* Search bar container */
+.search-bar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  width: 100%;
+  max-width: 600px;
+  position: relative;
+  margin-top: 20px;
+  flex-wrap: wrap; /* Ensures search bar and button wrap on small screens */
+}
+
+/* Search input field with rounded corners, padding, and shadow */
+.search-bar-input {
+  width: 100%;
+  padding: 12px 20px;
+  font-size: 1.2rem;
+  border-radius: 30px;
+  border: 2px solid #ddd;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+  background-color: #fff;
+  padding-left: 40px; /* Space for icon */
+  margin-bottom: 10px; /* Added space below input */
+}
+
+/* Focused state for the input field */
+.search-bar-input:focus {
+  border-color: #00bcd4;
+  box-shadow: 0 0 15px rgba(0, 188, 212, 0.3);
+}
+
+/* Search icon inside input */
+.search-bar-input::before {
+  content: '🔍';
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+  color: #aaa;
+}
+
+/* Search button */
+.search-button {
+  background-color: #00bcd4;
+  color: white;
+  font-size: 1.2rem;
+  padding: 12px 25px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  margin-left: 15px;
+  transition: all 0.3s ease;
+  font-weight: bold;
+}
+
+/* Button hover effect */
+.search-button:hover {
+  background-color: #0097a7;
+  box-shadow: 0 6px 12px rgba(0, 188, 212, 0.3);
+}
+
+/* Character details card container */
+.character-details-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 40px;
+  background-color: #f9f9f9;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+/* Card that contains character details */
+.character-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: white;
+  width: 100%;
+  max-width: 800px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  transition: transform 0.3s ease-in-out;
+  background-color: #f7fafc; /* Soft background color */
+}
+
+/* Hover effect for the character card */
+.character-card:hover {
+  transform: scale(1.02);
+}
+
+/* Title and header styling */
+.character-card h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase; /* Make header more prominent */
+}
+
+/* Styling for the name of the character */
+.character-card p {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #555;
+  line-height: 1.5;
+}
+
+.character-card h3 {
+  font-size: 1.5rem;
+  margin-top: 30px;
+  color: #333;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Styling for each episode number */
+.character-card ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.character-card li {
+  background-color: #f2f2f2;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 6px;
+  color: #444;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Hover effect for each episode */
+.character-card li:hover {
+  background-color: #e0e0e0;
+}
+
+/* Icons for character details */
+.character-card strong {
+  color: #333;
+  font-weight: bold; /* Make labels stand out */
+}
+
+/* Additional Styling for each section */
+.character-card .section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+/* Enhancing readability of each section */
+.character-card .section p {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Adding a rounded border for the card */
+.character-card .image-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.character-image {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #ddd;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive styling */
+@media screen and (max-width: 768px) {
+  .character-card {
+    padding: 15px;
+  }
+
+  .character-card h2 {
+    font-size: 1.8rem;
+  }
+
+  .character-card p {
+    font-size: 1rem;
+  }
+
+  .character-card h3 {
+    font-size: 1.25rem;
+  }
+
+  .search-bar-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .search-button {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .search-bar-input {
+    width: 100%;
+  }
+
+  .character-details-container {
+    padding: 20px;
+  }
+
+  .character-card {
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .character-card h2 {
+    font-size: 1.6rem;
+  }
+
+  .character-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .character-card p {
+    font-size: 0.9rem;
+  }
+
+  .search-bar-input {
+    font-size: 1rem;
+  }
+
+  .character-card li {
+    font-size: 1rem;
+  }
+}
